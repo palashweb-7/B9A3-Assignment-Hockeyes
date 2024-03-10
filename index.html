@@ -7,30 +7,209 @@
     <title>Hockeyes</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.3/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-   
-        <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            clifford: '#da373d',
-          }
+    <script src="https://kit.fontawesome.com/131411b50e.js" crossorigin="anonymous"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
         }
-      }
-    }
-  </script>
-    
+    </script>
+
 </head>
 
 <body>
-    <header>
+    <header class="lg:px-40 ">
+        <!-- section navbar -->
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li class="text-orange-500 font-medium"><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Pages</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-2xl font-medium">Hockey’s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li class="text-orange-500 font-medium"><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a class="btn">Button</a>
+                </div>
+            </div>
+        </nav>
+        <!-- section-banner -->
+        <div class="">
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="Images/1.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="Images/1.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img src="Images/1.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide4" class="carousel-item relative w-full">
+                    <img src="Images/1.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
 
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div
+            class="flex relative float-end items-center  gap-5 drop-shadow-lg rounded-sm bg-slate-300 lg:p-4 w-96  lg:w-60 lg:-mt-64 ">
+            <i class="fa-solid fa-star text-3xl text-amber-500"></i>
+            <div class="">
+                <h3 class="text-2xl font-medium">5.00</h3>
+                <p>Trust Pilot Ratings</p>
+            </div>
     </header>
-    <main>
+    <main class="lg:px-40 ">
+        <section class="text-center my-24 ">
+            <h2 class="text-4xl font-bold mb-5">Professional Hockeys Club</h2>
+            <p class="lg:max-w-3xl mx-auto">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis
+                placerat dolor. Purus urna in sit nullam proin. . </p>
+        </section>
 
+        <!-- RATING -->
+
+        <section class="my-12 grid grid-cols-1 lg:grid-cols-4 ">
+            <div class="text-center">
+                <div class="radial-progress text-primary " style="--value:70;" role="progressbar">70%</div>
+                <h4 class="font-bold mt-3">Prayer Facility</h4>
+                <p class="mt-3">Amet consectetur. Condimentum dignissim adipiscing .</p>
+
+            </div>
+            <div class="text-center ">
+                <div class="radial-progress text-blue-600 " style="--value:75;" role="progressbar">70%</div>
+                <h4 class="font-bold mt-3">Prayer Facility</h4>
+                <p class="mt-3">Amet consectetur. Condimentum dignissim adipiscing .</p>
+            </div>
+            <div class="text-center">
+                <div class="radial-progress text-red-500" style="--value:80;" role="progressbar">70%</div>
+                <h4 class="font-bold mt-3">Prayer Facility</h4>
+                <p class="mt-3">Amet consectetur. Condimentum dignissim adipiscing .</p>
+            </div>
+            <div class="text-center">
+                <div class="radial-progress text-yellow-400" style="--value:90;" role="progressbar">90%</div>
+                <h4 class="font-bold mt-3">Prayer Facility</h4>
+                <p class="mt-3">Amet consectetur. Condimentum dignissim adipiscing .</p>
+            </div>
+        </section>
+        <!-- programm section -->
+        <section class="text-center my-24 ">
+            <h2 class="text-4xl font-bold mb-5">Program Sections</h2>
+            <p class="lg:max-w-3xl mx-auto">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis
+                placerat dolor. Purus urna in sit nullam proin. . </p>
+        </section>
+
+        <section>
+            <div class="grid lg:grid-cols-2  gap-5">
+                <div class="flex-1">
+                    <div class="card  bg-base-100 shadow-xl image-full">
+                        <figure><img src="Images/2.png" alt="Shoes" /></figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Junior Program</h2>
+                            <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
+                                enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor
+                                congue sed et in.</p>
+                            <div class=" justify-end">
+                                <button class="btn btn-primary bg-orange-600">Register Now!</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card-2 -->
+                <div class="flex-1">
+                    <div class="card  bg-base-100 shadow-xl image-full">
+                        <figure><img src="Images/3.png" alt="Shoes" /></figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Teenager Program</h2>
+                            <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
+                                enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor
+                                congue sed et in.</p>
+                            <div class=" justify-end">
+                                <button class="btn btn-primary bg-orange-600">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-5">
+                <div class="">
+                    <div class="card  bg-base-100 shadow-xl image-full">
+                        <figure><img src="Images/4.png" alt="" /></figure>
+                        <div class="card-body w-96 mt-10">
+                            <h2 class="card-title ">Teenager Program</h2>
+                            <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
+                                enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor
+                                congue sed et in.</p>
+                            <div class=" justify-end">
+                                <button class="btn btn-primary bg-orange-600">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- our new products -->
+        <section class="text-center my-24 ">
+            <h2 class="text-4xl font-bold mb-5">Our New Products</h2>
+            <p class="lg:max-w-3xl mx-auto">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis
+                placerat dolor. Purus urna in sit nullam proin. . </p>
+        </section>
+
+        <!-- card section -->
+        <section class="grid lg:grid-cols-2 ">
+            <!-- card-1 -->
+           
+        </section>
     </main>
     <footer>
-        
+
     </footer>
 </body>
 
